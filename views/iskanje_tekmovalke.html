@@ -1,0 +1,9 @@
+% rebase('osnova.html')
+<h2>Podatki o tekmovalki {{iskalni_niz}}</h2>
+<ol style="list-style-type: decimal">
+    % for elt in ime_priimek:
+    <li>
+        <a href="/isci-tekmovalko/{{elt[0][0]}}/">{{elt[0][0]}}</a>
+    </li>
+    % end
+</ol>
