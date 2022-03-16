@@ -1,0 +1,12 @@
+% rebase('osnova.html')
+<div class="container">
+<p>
+<h2>Najboljših 10 tekmovalk v sezoni {{iskalni_niz}}</h2></p>
+<ol style="list-style-type: decimal">
+    % for tekmovalka in tekmovalke:
+    <li>
+        {{tekmovalka[0]}}, {{tekmovalka[1]}} točk
+    </li>
+    % end
+</ol>
+</div>

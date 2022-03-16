@@ -1,0 +1,12 @@
+% rebase('osnova.html')
+<div class="container">
+<p>
+<h2>Najboljših 10 držav v sezoni {{iskalni_niz}}</h2></p>
+<ol style="list-style-type: decimal">
+    % for drzava in drzave:
+    <li>
+        {{drzava[0]}}, {{drzava[1]}} točk
+    </li>
+    % end
+</ol>
+</div>

@@ -1,0 +1,12 @@
+% rebase('osnova.html')
+<div class="container">
+<p>
+<h2>Katera od tekmovalk "{{iskalni_niz}}" vas zanima?</h2></p>
+<ol style="list-style-type: decimal">
+    % for elt in ime_priimek:
+    <li>
+        <a href="/isci-tekmovalko/{{elt[0][0]}}/">{{elt[0][0]}}</a>
+    </li>
+    % end
+</ol>
+</div>

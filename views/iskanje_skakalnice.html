@@ -1,0 +1,12 @@
+% rebase('osnova.html')
+<div class="container">
+<p>
+<h2>Katera od skakalnic "{{iskalni_niz}}" vas zanima?</h2></p>
+<ol style="list-style-type: decimal">
+    % for elt in kraj:
+    <li>
+        <a href="/isci-skakalnico/{{elt[0]}}/{{elt[1]}}/">{{elt[0]}} {{elt[1]}}</a>
+    </li>
+    % end
+</ol>
+</div>

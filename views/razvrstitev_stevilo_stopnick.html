@@ -1,0 +1,28 @@
+% rebase('osnova.html')
+<div class="container">
+<style>
+table, th, td {
+  border:1px solid black;
+
+}
+</style>
+<body>
+
+<h2>Razvrstitev po številu stopničk</h2>
+
+<table class="table is-bordered is-narrow is-striped">
+  <tr>
+    <th>Priimek ime</th>
+    <th>Država</th>
+    <th>Število stopničk</th>
+  </tr>
+  % for elt in a:
+      <tr>
+        <td>{{elt[0]}}</td>
+        <td>{{elt[1]}}</td>
+        <td>{{elt[2]}}</td>
+      </tr>
+  % end
+</table>
+</body>
+</div>

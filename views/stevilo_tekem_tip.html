@@ -1,0 +1,19 @@
+% rebase('osnova.html')
+<div class="container">
+<p>
+<h2>Število tekem prirejenih na posameznem tipu skakalnice</h2></p>
+<ul>
+    % for elt in a:
+    <li>
+        Srednje skakalnice: 
+        {{elt}}
+    </li>
+    % end
+    % for elt in b:
+    <li>
+        Velike skakalnice: 
+        {{elt}}
+    </li>
+    % end
+</ul>
+</div>
